@@ -1,0 +1,9 @@
+services:
+  mcp-highway:
+    build: .
+    image: mcp-tw-highway
+    ports:
+      - "${PORT:-8000}:8000"
+    env_file:
+      - .env
+    restart: always
